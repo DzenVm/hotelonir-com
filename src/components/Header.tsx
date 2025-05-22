@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           <Link href="/" className="flex items-center gap-2">
             <FaDice className="text-brand-red w-6 h-6" />
             <span className="font-bold text-xl tracking-tight text-gray-900">
-              HotelsKasynohall
+              Dorsimin
             </span>
           </Link>
 

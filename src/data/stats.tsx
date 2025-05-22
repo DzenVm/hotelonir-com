@@ -7,18 +7,18 @@ export const stats: IStats[] = [
     title: "700+",
     icon: <BsBarChartFill size={34} className="text-red-500" />,
     description:
-      "Dostępnych hoteli z legalnymi kasynami w największych miastach Polski.",
+      "Zweryfikowanych obiektów z kasynami — gotowych do natychmiastowej rezerwacji.",
   },
   {
     title: "4.9",
     icon: <BsFillStarFill size={34} className="text-yellow-500" />,
     description:
-      "Średnia ocena użytkowników na podstawie ponad 12 000 opinii gości.",
+      "Ocena na podstawie opinii graczy i gości korzystających z systemu rezerwacyjnego.",
   },
   {
     title: "100+",
     icon: <PiGlobeFill size={34} className="text-green-600" />,
     description:
-      "Miast i regionów – od Warszawy i Gdańska po góry i uzdrowiska.",
+      "Lokalizacji w całej Polsce — zarówno w dużych miastach, jak i miejscowościach wypoczynkowych.",
   },
 ];

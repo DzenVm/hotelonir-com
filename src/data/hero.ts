@@ -1,5 +1,5 @@
 export const heroDetails = {
-  heading: 'Rezerwuj hotele z kasynem w całej Polsce',
+  heading: 'Ekskluzywne hotele z kasynami w Twoim zasięgu',
   subheading:
-    'Porównuj oferty luksusowych hoteli z legalnymi kasynami – od Warszawy po Zakopane. Zero prowizji, tylko sprawdzone miejsca i bezpieczna rezerwacja.',
+    'Odkrywaj i rezerwuj najlepsze hotele z legalnym kasynem w całej Polsce – bez pośredników, bez ukrytych opłat. Tylko sprawdzone lokalizacje i pełne bezpieczeństwo transakcji.',
 };

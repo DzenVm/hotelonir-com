@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <Link href="/" className="flex items-center gap-2">
             <FaDice className="w-6 h-6 text-brand-red" />
             <span className="text-xl font-semibold">
-              HotelsKasynohall
+              Dorsimin
             
             </span>
           </Link>

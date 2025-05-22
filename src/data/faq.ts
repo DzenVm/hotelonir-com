@@ -1,45 +1,45 @@
 /**
- * Najczęściej zadawane pytania (FAQ) – hotelskasynohall.top
+ * FAQ – Hotele z kasynami w Polsce / hotelskasynohall.top
  */
 export const faqs = [
   {
-    question: 'Czy rezerwacja przez hotelskasynohall.top jest płatna?',
+    question: 'Czy korzystanie z hotelskasynohall.top wiąże się z opłatą?',
     answer:
-      'Nie. Wyszukiwanie i finalizacja rezerwacji są całkowicie darmowe. Nie pobieramy prowizji od użytkowników.',
+      'Nie, nasza wyszukiwarka jest całkowicie bezpłatna. Nie pobieramy żadnych prowizji od użytkownika.',
   },
   {
-    question: 'Czy wszystkie hotele mają legalne kasyno?',
+    question: 'Czy wszystkie prezentowane obiekty posiadają kasyno?',
     answer:
-      'Tak, prezentujemy wyłącznie hotele współpracujące z licencjonowanymi operatorami kasyn w Polsce.',
+      'Tak – na stronie znajdują się wyłącznie hotele z legalnie działającymi kasynami, posiadającymi odpowiednie licencje.',
   },
   {
-    question: 'Czy mogę zarezerwować hotel na ostatnią chwilę?',
+    question: 'Czy mogę dokonać rezerwacji na dzisiaj?',
     answer:
-      'Wiele ofert umożliwia natychmiastową rezerwację – nawet tego samego dnia. System pokazuje dostępność w czasie rzeczywistym.',
+      'Tak, wiele hoteli udostępnia natychmiastowe rezerwacje – aktualna dostępność aktualizowana jest na bieżąco.',
   },
   {
-    question: 'Jakie formy płatności są dostępne?',
+    question: 'Jak mogę zapłacić za rezerwację?',
     answer:
-      'Obsługujemy karty płatnicze, BLIK, szybkie przelewy, Google Pay i Apple Pay. Płatności są szyfrowane i w pełni bezpieczne.',
+      'Płatności można dokonać kartą, BLIKIEM, szybkim przelewem lub mobilnie przez Apple Pay i Google Pay – wszystkie transakcje są chronione.',
   },
   {
-    question: 'Czy są oferty tylko dla dorosłych?',
+    question: 'Czy są hotele wyłącznie dla dorosłych?',
     answer:
-      'Tak, część obiektów z kasynami oferuje wyłącznie pobyty 18+. Oznaczamy je wyraźnie w wynikach wyszukiwania.',
+      'Tak, niektóre obiekty oznaczone są jako „Adults Only” – pobyt dostępny jest wyłącznie dla osób pełnoletnich.',
   },
   {
-    question: 'Czy mogę filtrować hotele według miasta lub regionu?',
+    question: 'Czy mogę filtrować wyniki według miasta i kasyna?',
     answer:
-      'Oczywiście. Możesz filtrować po lokalizacji, ocenach, cenie, udogodnieniach oraz dostępności kasyna.',
+      'Oczywiście – możesz wybrać lokalizację, określić obecność kasyna, zakres cenowy, oceny i inne parametry.',
   },
   {
-    question: 'Jakie są warunki anulowania rezerwacji?',
+    question: 'Czy można anulować rezerwację bez kosztów?',
     answer:
-      'Większość ofert oferuje bezpłatne anulowanie do określonego terminu. Szczegóły znajdziesz w opisie każdej oferty.',
+      'Tak, wiele ofert zawiera elastyczne warunki anulacji – szczegóły każdej rezerwacji dostępne są przed dokonaniem płatności.',
   },
   {
-    question: 'Jak mogę skontaktować się z obsługą?',
+    question: 'Jak skontaktować się z zespołem hotelskasynohall.top?',
     answer:
-      'Nasz zespół działa 7 dni w tygodniu. Napisz na kontakt@hotelskasynohall.top lub skorzystaj z formularza pomocy na stronie.',
+      'Jesteśmy dostępni codziennie. Napisz na kontakt@hotelskasynohall.top lub skorzystaj z formularza kontaktowego na stronie.',
   },
 ];

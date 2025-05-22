@@ -14,76 +14,76 @@ import { IBenefit } from '@/types';
 
 export const benefits: IBenefit[] = [
   {
-    title: 'Szybka rezerwacja hoteli z kasynem',
+    title: 'Hotel z kasynem? Znajdziesz go w minutę',
     description:
-      'HotelsKasynoHall.top umożliwia błyskawiczne znalezienie luksusowych hoteli z legalnymi kasynami w największych polskich miastach.',
+      'Nie trać czasu na przeglądanie wielu stron. Nasza wyszukiwarka pokazuje tylko hotele z kasynami — w jednym, czytelnym widoku.',
     bullets: [
       {
-        title: 'Ogólnopolska baza lokalizacji',
-        description: 'Warszawa, Kraków, Gdańsk, Wrocław i inne – wszystkie dostępne w jednym miejscu.',
+        title: 'Największe miasta, jeden system',
+        description: 'Warszawa, Gdańsk, Katowice i więcej – bez zbędnego filtrowania.',
         icon: <FiMapPin size={26} />,
       },
       {
-        title: 'Wyszukiwanie intuicyjne',
+        title: 'Podpowiedzi na start',
         description:
-          'System podpowiada popularne destynacje już po kilku znakach.',
+          'Wpisz pierwsze litery i od razu zobacz najtrafniejsze propozycje.',
         icon: <FiSearch size={26} />,
       },
       {
-        title: 'Elastyczne daty pobytu',
-        description: 'Szybkie ustawienie terminu dzięki inteligentnemu wyborowi dat.',
+        title: 'Daty dopasowane do Ciebie',
+        description: 'Prosty wybór zakresu – od weekendu po dłuższy pobyt.',
         icon: <FiCalendar size={26} />,
       },
     ],
     imageSrc: '/images/mockup-search.webp',
   },
   {
-    title: 'Porównuj i wybieraj najlepsze oferty',
+    title: 'Sprawdź oferty bez ściemy',
     description:
-      'Zobacz aktualne ceny, dostępność pokoi i dodatkowe bonusy kasynowe — wszystko w jednym interfejsie.',
+      'Każdy obiekt został zweryfikowany, a informacje o cenach i promocjach są zawsze aktualne.',
     bullets: [
       {
-        title: 'Tylko sprawdzone obiekty',
+        title: 'Tylko licencjonowane hotele',
         description:
-          'Wszystkie hotele przeszły weryfikację i posiadają licencjonowane kasyna.',
+          'Współpracujemy wyłącznie z obiektami posiadającymi legalne kasyna.',
         icon: <FiCheckCircle size={26} />,
       },
       {
-        title: 'Oferty specjalne',
+        title: 'Promocje i korzyści',
         description:
-          'Zniżki dla nowych użytkowników, darmowe żetony i pakiety VIP.',
+          'Bonusy powitalne, żetony w pakiecie, pokoje w cenach niższych niż na bookingach.',
         icon: <FiPercent size={26} />,
       },
       {
-        title: 'Autentyczne recenzje graczy',
+        title: 'Prawdziwe opinie graczy',
         description:
-          'Opinie zweryfikowanych gości z doświadczeniem w obiektach kasynowych.',
+          'Oceny wystawione przez osoby, które rzeczywiście odwiedziły dane miejsce.',
         icon: <FiThumbsUp size={26} />,
       },
     ],
     imageSrc: '/images/mockup-compare.webp',
   },
   {
-    title: 'Zarezerwuj bezpiecznie i bez prowizji',
+    title: 'Rezerwacja w 100% bezpieczna',
     description:
-      'Gwarantujemy najwyższy poziom zabezpieczeń oraz błyskawiczne potwierdzenia rezerwacji.',
+      'Gwarantujemy zgodność z normami branżowymi i szybkie potwierdzenie każdej rezerwacji.',
     bullets: [
       {
-        title: 'Szyfrowane połączenia SSL',
+        title: 'Szyfrowanie klasy bankowej',
         description:
-          'Twoje dane są chronione na każdym etapie – od wyszukiwania po płatność.',
+          'Twoje dane nie opuszczają bezpiecznego połączenia HTTPS.',
         icon: <FiLock size={26} />,
       },
       {
-        title: 'Bezpieczne formy płatności',
+        title: 'Zaufane płatności',
         description:
-          'Karta, BLIK, Apple Pay – płatności przetwarzane zgodnie z normami PCI.',
+          'Visa, Mastercard, BLIK, Apple Pay – wybierz preferowaną formę rozliczenia.',
         icon: <FiCreditCard size={26} />,
       },
       {
-        title: 'Całodobowy monitoring',
+        title: 'Stały nadzór nad transakcjami',
         description:
-          'System analizuje transakcje i natychmiast blokuje podejrzane działania.',
+          'Automatyczne wykrywanie prób oszustwa działa non stop.',
         icon: <FiShield size={26} />,
       },
     ],

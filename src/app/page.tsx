@@ -13,10 +13,10 @@ const HomePage: React.FC = () => (
   <>
     <Header />
     <Hero />
-     <Stats />
+     <FAQ />
     <SearchForm />
+     <Stats />
     <Benefits />
-    <FAQ />
     <CTA />  
   </>
 );
