@@ -15,8 +15,11 @@ const sourceSans = Source_Sans_3({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: siteDetails.metadata.title,
   description: siteDetails.metadata.description,
-   icon: '/favicon.ico',           // або '/favicon.svg'
-    apple: '/apple-touch-icon.png', // якщо є окремий Apple-ікон
+   // Правильна секція для фавікона:
+  icons: {
+    icon: "/favicon.ico",               // ваш основний фавікон
+    apple: "/apple-touch-icon.png",     // для iOS (якщо потрібно)
+  },
   openGraph: {
     title: siteDetails.metadata.title,
     description: siteDetails.metadata.description,
