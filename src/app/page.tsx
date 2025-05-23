@@ -17,7 +17,7 @@ const HomePage: React.FC = () => (
     <SearchForm />
      <Stats />
     <Benefits />
-    <CTA />  
+
   </>
 );
 
