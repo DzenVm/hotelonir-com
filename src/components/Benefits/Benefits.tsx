@@ -3,11 +3,11 @@ import { benefits } from "@/data/benefits"
 
 const Benefits: React.FC = () => {
     return (
-        <section id="features" className="uniq-py-20 uniq-bg-gray-50">
+        <section id="features" className="py-20 bg-gray-50">
             {/* Скрытый заголовок для доступности */}
-            <h2 className="uniq-sr-only">Our Core Features</h2>
+            <h2 className="sr-only">Our Core Features</h2>
 
-            <div className="uniq-space-y-16">
+            <div className="space-y-16">
                 {benefits.map((item, index) => (
                     <BenefitSection
                         key={index}

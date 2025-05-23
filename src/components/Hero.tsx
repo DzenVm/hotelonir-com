@@ -7,17 +7,17 @@ const Hero: React.FC = () => (
   <section
     id="hero"
     className="
-      uniq-relative uniq-flex uniq-flex-col uniq-items-center uniq-justify-center
-      uniq-pb-20 uniq-pt-36 md:uniq-pt-44 uniq-px-6 uniq-bg-neutral-100 uniq-text-gray-900
+      relative flex flex-col items-center justify-center
+      pb-20 pt-36 md:pt-44 px-6 bg-neutral-100 text-gray-900
     "
   >
     {/* Background Grid */}
     <div
       className="
-        uniq-absolute uniq-inset-0 uniq--z-10
-        uniq-bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),
+        absolute inset-0 -z-10
+        bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),
                   linear-gradient(to_bottom,#00000008_1px,transparent_1px)]
-        uniq-bg-[size:44px_44px]
+        bg-[size:44px_44px]
       "
     />
 
@@ -26,16 +26,16 @@ const Hero: React.FC = () => (
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
       className="
-        uniq-text-4xl md:uniq-text-6xl uniq-leading-tight uniq-font-extrabold
-        uniq-text-center uniq-max-w-3xl
+        text-4xl md:text-6xl leading-tight font-extrabold
+        text-center max-w-3xl
       "
     >
       {heroDetails.headingEnglish}
     </motion.h1>
 
     <p className="
-      uniq-mt-4 uniq-text-lg md:uniq-text-xl uniq-text-center uniq-text-gray-700
-      uniq-max-w-xl
+      mt-4 text-lg md:text-xl text-center text-gray-700
+      max-w-xl
     ">
       {heroDetails.subheadingEnglish}
     </p>
@@ -43,9 +43,9 @@ const Hero: React.FC = () => (
     <a
       href="#search"
       className="
-        uniq-mt-10 uniq-rounded-full uniq-border uniq-border-gray-400 uniq-bg-white
-        uniq-px-7 uniq-py-3 uniq-font-medium uniq-text-black uniq-shadow-sm
-        uniq-hover:uniq-bg-gray-50 uniq-transition
+        mt-10 rounded-full border border-gray-400 bg-white
+        px-7 py-3 font-medium text-black shadow-sm
+        hover:bg-gray-50 transition
       "
     >
       Search Available Hotels

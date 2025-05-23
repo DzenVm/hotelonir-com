@@ -4,30 +4,30 @@ import { testimonials } from '@/data/testimonials';
 
 const Testimonials: React.FC = () => {
     return (
-        <div className="uniq-grid uniq-gap-14 uniq-max-w-lg uniq-w-full uniq-mx-auto lg:uniq-gap-8 lg:uniq-grid-cols-3 lg:uniq-max-w-full">
+        <div className="grid gap-14 max-w-lg w-full mx-auto lg:gap-8 lg:grid-cols-3 lg:max-w-full">
             {testimonials.map((testimonial, index) => (
                 <div
                     key={index}
-                    className="uniq-flex uniq-flex-col uniq-items-center lg:uniq-items-start uniq-text-center lg:uniq-text-left"
+                    className="flex flex-col items-center lg:items-start text-center lg:text-left"
                 >
-                    <div className="uniq-flex uniq-items-center uniq-mb-4 uniq-w-full uniq-justify-center lg:uniq-justify-start">
+                    <div className="flex items-center mb-4 w-full justify-center lg:justify-start">
                         <Image
                             src={testimonial.avatar}
                             alt={`${testimonial.name} avatar`}
                             width={50}
                             height={50}
-                            className="uniq-rounded-full uniq-shadow-md"
+                            className="rounded-full shadow-md"
                         />
-                        <div className="uniq-ml-4">
-                            <h3 className="uniq-text-lg uniq-font-semibold uniq-text-secondary">
+                        <div className="ml-4">
+                            <h3 className="text-lg font-semibold text-secondary">
                                 {testimonial.name}
                             </h3>
-                            <p className="uniq-text-sm uniq-text-foreground-accent">
+                            <p className="text-sm text-foreground-accent">
                                 {testimonial.role}
                             </p>
                         </div>
                     </div>
-                    <p className="uniq-text-foreground-accent">
+                    <p className="text-foreground-accent">
                         &quot;{testimonial.message}&quot;
                     </p>
                 </div>

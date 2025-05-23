@@ -51,11 +51,11 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }) => {
   const { title, description, imageSrc, bullets } = benefit;
 
   return (
-    <section className="uniq-py-16 uniq-bg-gray-50">
+    <section className="py-16 bg-gray-50">
       <motion.div
         className="
-          uniq-flex uniq-flex-wrap uniq-flex-col uniq-items-center uniq-justify-center
-          uniq-gap-2 lg:uniq-flex-row lg:uniq-gap-20 lg:uniq-flex-nowrap uniq-mb-24
+          flex flex-wrap flex-col items-center justify-center
+          gap-2 lg:flex-row lg:gap-20 lg:flex-nowrap mb-24
         "
         variants={containerVariants}
         initial="offscreen"
@@ -64,33 +64,33 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }) => {
       >
         <div
           className={clsx(
-            "uniq-flex uniq-flex-wrap uniq-items-center uniq-w-full uniq-max-w-lg",
+            "flex flex-wrap items-center w-full max-w-lg",
             {
-              "uniq-justify-start": imageAtRight,
-              "lg:uniq-order-1 uniq-justify-end": !imageAtRight,
+              "justify-start": imageAtRight,
+              "lg:order-1 justify-end": !imageAtRight,
             }
           )}
         >
-          <div className="uniq-w-full uniq-text-center lg:uniq-text-left">
+          <div className="w-full text-center lg:text-left">
             <motion.div
-              className="uniq-flex uniq-flex-col uniq-w-full"
+              className="flex flex-col w-full"
               variants={childVariants}
             >
               <SectionTitle>
-                <h3 className="lg:uniq-max-w-2xl">{title}</h3>
+                <h3 className="lg:max-w-2xl">{title}</h3>
               </SectionTitle>
 
               <p
                 className="
-                  uniq-mt-1.5 uniq-mx-auto lg:uniq-ml-0
-                  uniq-leading-normal uniq-text-gray-700
+                  mt-1.5 mx-auto lg:ml-0
+                  leading-normal text-gray-700
                 "
               >
                 {description}
               </p>
             </motion.div>
 
-            <div className="uniq-mx-auto lg:uniq-ml-0 uniq-w-full">
+            <div className="mx-auto lg:ml-0 w-full">
               {bullets.map((item, index) => (
                 <BenefitBullet
                   key={index}
@@ -104,14 +104,14 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }) => {
         </div>
 
         <div
-          className={clsx("uniq-mt-5 lg:uniq-mt-0", {
-            "lg:uniq-order-2": imageAtRight,
+          className={clsx("mt-5 lg:mt-0", {
+            "lg:order-2": imageAtRight,
           })}
         >
           <div
-            className={clsx("uniq-w-fit uniq-flex", {
-              "uniq-justify-start": imageAtRight,
-              "uniq-justify-end": !imageAtRight,
+            className={clsx("w-fit flex", {
+              "justify-start": imageAtRight,
+              "justify-end": !imageAtRight,
             })}
           >
             <Image
@@ -120,7 +120,7 @@ const BenefitSection: React.FC<Props> = ({ benefit, imageAtRight }) => {
               width={384}
               height={762}
               quality={100}
-              className="lg:uniq-ml-0"
+              className="lg:ml-0"
             />
           </div>
         </div>

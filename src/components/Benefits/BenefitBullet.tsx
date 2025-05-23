@@ -13,17 +13,17 @@ const BenefitBullet: React.FC<IBenefitBullet> = ({
   return (
     <motion.div
       className="
-        uniq-flex uniq-flex-col uniq-items-center uniq-mt-8 uniq-gap-3 
-        lg:uniq-gap-5 lg:uniq-flex-row lg:uniq-items-start
+        flex flex-col items-center mt-8 gap-3 
+        lg:gap-5 lg:flex-row lg:items-start
       "
       variants={childVariants}
     >
-      <div className="uniq-flex uniq-justify-center uniq-mx-auto lg:uniq-mx-0 uniq-flex-shrink-0 uniq-mt-3 uniq-w-fit">
+      <div className="flex justify-center mx-auto lg:mx-0 flex-shrink-0 mt-3 w-fit">
         {icon}
       </div>
       <div>
-        <h4 className="uniq-text-lg uniq-font-semibold">{title}</h4>
-        <p className="uniq-text-base uniq-text-foreground-accent">
+        <h4 className="text-lg font-semibold">{title}</h4>
+        <p className="text-base text-foreground-accent">
           {description}
         </p>
       </div>

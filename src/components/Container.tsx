@@ -8,7 +8,7 @@ const Container: React.FC<React.PropsWithChildren<Props>> = ({ children, classNa
     return (
         <div
             className={`
-                uniq-px-5 uniq-w-full uniq-max-w-7xl uniq-mx-auto
+                px-5 w-full max-w-7xl mx-auto
                 ${className ?? ""}
             `}
         >
