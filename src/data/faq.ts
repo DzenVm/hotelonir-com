@@ -1,45 +1,43 @@
-/**
- * FAQ – Hotele z kasynami w Polsce / hotelskasynohall.top
- */
+// src/data/faqs.ts
 export const faqs = [
   {
-    question: 'Czy korzystanie z hotelskasynohall.top wiąże się z opłatą?',
+    question: 'Is using hotelonir.com completely free?',
     answer:
-      'Nie, nasza wyszukiwarka jest całkowicie bezpłatna. Nie pobieramy żadnych prowizji od użytkownika.',
+      'Yes—our search platform is entirely free of charge. We never add hidden booking fees or commissions.',
   },
   {
-    question: 'Czy wszystkie prezentowane obiekty posiadają kasyno?',
+    question: 'Do all listed properties feature in-house gaming lounges?',
     answer:
-      'Tak – na stronie znajdują się wyłącznie hotele z legalnie działającymi kasynami, posiadającymi odpowiednie licencje.',
+      'Absolutely—every venue on our site offers fully licensed entertainment lounges for your enjoyment.',
   },
   {
-    question: 'Czy mogę dokonać rezerwacji na dzisiaj?',
+    question: 'Can I book a room for today’s stay?',
     answer:
-      'Tak, wiele hoteli udostępnia natychmiastowe rezerwacje – aktualna dostępność aktualizowana jest na bieżąco.',
+      'Yes—many properties support instant bookings, with availability updated in real time.',
   },
   {
-    question: 'Jak mogę zapłacić za rezerwację?',
+    question: 'What payment methods are accepted?',
     answer:
-      'Płatności można dokonać kartą, BLIKIEM, szybkim przelewem lub mobilnie przez Apple Pay i Google Pay – wszystkie transakcje są chronione.',
+      'We support secure payments via credit/debit cards, instant bank transfers, Apple Pay, and Google Pay—your transactions are fully protected.',
   },
   {
-    question: 'Czy są hotele wyłącznie dla dorosłych?',
+    question: 'Are there adults-only hotels available?',
     answer:
-      'Tak, niektóre obiekty oznaczone są jako „Adults Only” – pobyt dostępny jest wyłącznie dla osób pełnoletnich.',
+      'Yes—some venues are designated “Adults Only,” ensuring an exclusive experience for guests aged 18 and over.',
   },
   {
-    question: 'Czy mogę filtrować wyniki według miasta i kasyna?',
+    question: 'Can I filter results by city and entertainment options?',
     answer:
-      'Oczywiście – możesz wybrać lokalizację, określić obecność kasyna, zakres cenowy, oceny i inne parametry.',
+      'Of course—you can narrow your search by location, on-site amenities, price range, ratings, and more.',
   },
   {
-    question: 'Czy można anulować rezerwację bez kosztów?',
+    question: 'Is free cancellation available?',
     answer:
-      'Tak, wiele ofert zawiera elastyczne warunki anulacji – szczegóły każdej rezerwacji dostępne są przed dokonaniem płatności.',
+      'Yes—many listings include flexible cancellation policies. Full details are provided before you confirm your reservation.',
   },
   {
-    question: 'Jak skontaktować się z zespołem hotelskasynohall.top?',
+    question: 'How can I contact the HotelOnir support team?',
     answer:
-      'Jesteśmy dostępni codziennie. Napisz na kontakt@hotelskasynohall.top lub skorzystaj z formularza kontaktowego na stronie.',
+      'We’re here to help daily. Email us at support@hotelonir.com or use the contact form on our website.',
   },
 ];

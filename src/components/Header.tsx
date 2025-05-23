@@ -8,32 +8,32 @@ import { FaDice } from 'react-icons/fa';
 import Container from './Container';
 
 const navItems = [
-  { text: 'Dlaczego warto', url: '#benefits' },
-  { text: 'Najczęstsze pytania', url: '#faq' },
+  { text: 'Why Choose Us', url: '#benefits' },
+  { text: 'FAQs', url: '#faq' },
 ];
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur border-b border-gray-200">
-      <Container className="!px-4">
-        <nav className="flex justify-between items-center py-3 md:py-5">
+    <header className="uniq-fixed uniq-top-0 uniq-left-0 uniq-right-0 uniq-z-50 uniq-bg-white/90 uniq-backdrop-blur uniq-border-b uniq-border-gray-200">
+      <Container className="!uniq-px-4">
+        <nav className="uniq-flex uniq-justify-between uniq-items-center uniq-py-3 md:uniq-py-5">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <FaDice className="text-brand-red w-6 h-6" />
-            <span className="font-bold text-xl tracking-tight text-gray-900">
-              Dorsimin
+          <Link href="/" className="uniq-flex uniq-items-center uniq-gap-2">
+            <FaDice className="uniq-text-brand-red uniq-w-6 uniq-h-6" />
+            <span className="uniq-font-bold uniq-text-xl uniq-tracking-tight uniq-text-gray-900">
+              HotelOnir
             </span>
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-6">
+          <ul className="uniq-hidden md:uniq-flex uniq-space-x-6">
             {navItems.map((item) => (
               <li key={item.text}>
                 <Link
                   href={item.url}
-                  className="text-sm font-medium text-gray-700 hover:text-brand-red transition"
+                  className="uniq-text-sm uniq-font-medium uniq-text-gray-700 uniq-hover:uniq-text-brand-red uniq-transition"
                 >
                   {item.text}
                 </Link>
@@ -42,9 +42,9 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="#search"
-                className="text-sm bg-brand-red text-white px-5 py-2 rounded-full shadow hover:bg-red-600 transition"
+                className="uniq-text-sm uniq-bg-brand-red uniq-text-white uniq-px-5 uniq-py-2 uniq-rounded-full uniq-shadow uniq-hover:uniq-bg-red-600 uniq-transition"
               >
-                Znajdź hotel
+                Find Hotel
               </Link>
             </li>
           </ul>
@@ -53,16 +53,16 @@ const Header: React.FC = () => {
           <button
             onClick={() => setIsOpen(!isOpen)}
             type="button"
-            className="md:hidden text-brand-red focus:outline-none"
+            className="md:uniq-hidden uniq-text-brand-red uniq-focus:outline-none"
             aria-controls="mobile-menu"
             aria-expanded={isOpen}
           >
             {isOpen ? (
-              <HiOutlineXMark className="w-6 h-6" />
+              <HiOutlineXMark className="uniq-w-6 uniq-h-6" />
             ) : (
-              <HiBars3 className="w-6 h-6" />
+              <HiBars3 className="uniq-w-6 uniq-h-6" />
             )}
-            <span className="sr-only">Menu</span>
+            <span className="uniq-sr-only">Menu</span>
           </button>
         </nav>
       </Container>
@@ -70,21 +70,21 @@ const Header: React.FC = () => {
       {/* Mobile Menu */}
       <Transition
         show={isOpen}
-        enter="transition duration-200 ease-out"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
-        leave="transition duration-150 ease-in"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
+        enter="uniq-transition uniq-duration-200 uniq-ease-out"
+        enterFrom="uniq-opacity-0 uniq-scale-95"
+        enterTo="uniq-opacity-100 uniq-scale-100"
+        leave="uniq-transition uniq-duration-150 uniq-ease-in"
+        leaveFrom="uniq-opacity-100 uniq-scale-100"
+        leaveTo="uniq-opacity-0 uniq-scale-95"
       >
-        <div id="mobile-menu" className="md:hidden bg-white border-t border-gray-200">
-          <ul className="flex flex-col px-6 py-4 space-y-3">
+        <div id="mobile-menu" className="md:uniq-hidden uniq-bg-white uniq-border-t uniq-border-gray-200">
+          <ul className="uniq-flex uniq-flex-col uniq-px-6 uniq-py-4 uniq-space-y-3">
             {navItems.map((item) => (
               <li key={item.text}>
                 <Link
                   href={item.url}
                   onClick={() => setIsOpen(false)}
-                  className="block text-sm text-gray-800 hover:text-brand-red"
+                  className="uniq-block uniq-text-sm uniq-text-gray-800 uniq-hover:uniq-text-brand-red"
                 >
                   {item.text}
                 </Link>
@@ -94,9 +94,9 @@ const Header: React.FC = () => {
               <Link
                 href="#search"
                 onClick={() => setIsOpen(false)}
-                className="block text-center bg-brand-red text-white py-2 rounded-full font-medium"
+                className="uniq-block uniq-text-center uniq-bg-brand-red uniq-text-white uniq-py-2 uniq-rounded-full uniq-font-medium"
               >
-                Szukaj hoteli
+                Search Hotels
               </Link>
             </li>
           </ul>

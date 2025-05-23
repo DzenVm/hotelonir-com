@@ -1,12 +1,13 @@
+// src/data/siteDetails.ts
 export const siteDetails = {
-    siteName: 'Finwise',
-    siteUrl: 'https://finwise-omega.vercel.app/',
-    metadata: {
-        title: 'Finwise - Next.js and Tailwind CSS Landing Page Template',
-        description: 'Finwise empowers businesses with cutting-edge technology solutions to drive success and efficiency.',
-    },
-    language: 'en-us',
-    locale: 'en-US',
-    siteLogo: `${process.env.BASE_PATH || ''}/images/logo.png`, // or use a string for the logo e.g. "TechStartup"
-    googleAnalyticsId: '', // e.g. G-XXXXXXX,
-}
+  siteName: 'HotelOnir',
+  siteUrl: 'https://hotelonir.com',
+  metadata: {
+    title: 'HotelOnir – Discover and Book Hotels with Entertainment Lounges',
+    description:
+      'HotelOnir offers a seamless booking experience for premier hotels featuring in-house gaming and entertainment lounges across Poland—no hidden fees, just exceptional stays.',
+  },
+  language: 'en-us',
+  locale: 'en-US',
+  siteLogo: `${process.env.BASE_PATH || ''}/images/logo-hotelonir.png`,
+};

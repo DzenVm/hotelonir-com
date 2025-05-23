@@ -1,5 +1,6 @@
+// src/data/heroDetails.ts
 export const heroDetails = {
-  heading: 'Ekskluzywne hotele z kasynami w Twoim zasięgu',
-  subheading:
-    'Odkrywaj i rezerwuj najlepsze hotele z legalnym kasynem w całej Polsce – bez pośredników, bez ukrytych opłat. Tylko sprawdzone lokalizacje i pełne bezpieczeństwo transakcji.',
+  headingEnglish: 'Discover Premier Hotels with Entertainment Lounges at Your Fingertips',
+  subheadingEnglish:
+    'Browse and book top-rated hotels with licensed gaming and entertainment venues across Poland—no middlemen, no hidden fees. Verified locations and secure transactions every time.',
 };

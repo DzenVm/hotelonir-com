@@ -1,89 +1,91 @@
+// src/data/benefits.ts
 import {
   FiMapPin,
   FiSearch,
   FiCalendar,
-  FiThumbsUp,
-  FiPercent,
   FiCheckCircle,
+  FiPercent,
+  FiThumbsUp,
   FiLock,
   FiCreditCard,
   FiShield,
 } from 'react-icons/fi';
-
 import { IBenefit } from '@/types';
 
 export const benefits: IBenefit[] = [
   {
-    title: 'Hotel z kasynem? Znajdziesz go w minutę',
+    title: 'Locate Gaming-Enabled Hotels Instantly',
     description:
-      'Nie trać czasu na przeglądanie wielu stron. Nasza wyszukiwarka pokazuje tylko hotele z kasynami — w jednym, czytelnym widoku.',
+      'Skip endless browsing—our search engine surfaces only properties with in-house gaming lounges for a clear, unified view.',
     bullets: [
       {
-        title: 'Największe miasta, jeden system',
-        description: 'Warszawa, Gdańsk, Katowice i więcej – bez zbędnego filtrowania.',
+        title: 'Major Cities, One Platform',
+        description:
+          'Warsaw, Gdańsk, Katowice and beyond—no extra filters needed.',
         icon: <FiMapPin size={26} />,
       },
       {
-        title: 'Podpowiedzi na start',
+        title: 'Smart Auto-Suggestions',
         description:
-          'Wpisz pierwsze litery i od razu zobacz najtrafniejsze propozycje.',
+          'Type the first letters and get spot-on recommendations immediately.',
         icon: <FiSearch size={26} />,
       },
       {
-        title: 'Daty dopasowane do Ciebie',
-        description: 'Prosty wybór zakresu – od weekendu po dłuższy pobyt.',
+        title: 'Flexible Date Selection',
+        description:
+          'Choose anything from a weekend getaway to an extended stay with ease.',
         icon: <FiCalendar size={26} />,
       },
     ],
     imageSrc: '/images/mockup-search.webp',
   },
   {
-    title: 'Sprawdź oferty bez ściemy',
+    title: 'Transparent Deals You Can Trust',
     description:
-      'Każdy obiekt został zweryfikowany, a informacje o cenach i promocjach są zawsze aktualne.',
+      'Every venue is verified and price/promotional details are always up to date.',
     bullets: [
       {
-        title: 'Tylko licencjonowane hotele',
+        title: 'Licensed Gaming Venues Only',
         description:
-          'Współpracujemy wyłącznie z obiektami posiadającymi legalne kasyna.',
+          'We partner exclusively with properties holding valid entertainment permits.',
         icon: <FiCheckCircle size={26} />,
       },
       {
-        title: 'Promocje i korzyści',
+        title: 'Exclusive Offers & Bonuses',
         description:
-          'Bonusy powitalne, żetony w pakiecie, pokoje w cenach niższych niż na bookingach.',
+          'Welcome perks, complimentary tokens, and room rates lower than standard booking sites.',
         icon: <FiPercent size={26} />,
       },
       {
-        title: 'Prawdziwe opinie graczy',
+        title: 'Real Guest Feedback',
         description:
-          'Oceny wystawione przez osoby, które rzeczywiście odwiedziły dane miejsce.',
+          'Ratings and reviews submitted by travelers who’ve actually stayed.',
         icon: <FiThumbsUp size={26} />,
       },
     ],
     imageSrc: '/images/mockup-compare.webp',
   },
   {
-    title: 'Rezerwacja w 100% bezpieczna',
+    title: 'Book with Complete Peace of Mind',
     description:
-      'Gwarantujemy zgodność z normami branżowymi i szybkie potwierdzenie każdej rezerwacji.',
+      'Industry-standard compliance and instant confirmation guarantee a secure reservation.',
     bullets: [
       {
-        title: 'Szyfrowanie klasy bankowej',
+        title: 'Bank-Grade Encryption',
         description:
-          'Twoje dane nie opuszczają bezpiecznego połączenia HTTPS.',
+          'All personal data is protected by secure HTTPS connections.',
         icon: <FiLock size={26} />,
       },
       {
-        title: 'Zaufane płatności',
+        title: 'Trusted Payment Methods',
         description:
-          'Visa, Mastercard, BLIK, Apple Pay – wybierz preferowaną formę rozliczenia.',
+          'Visa, Mastercard, BLIK, Apple Pay—pick your preferred option.',
         icon: <FiCreditCard size={26} />,
       },
       {
-        title: 'Stały nadzór nad transakcjami',
+        title: '24/7 Fraud Monitoring',
         description:
-          'Automatyczne wykrywanie prób oszustwa działa non stop.',
+          'Automated systems detect and block suspicious activity around the clock.',
         icon: <FiShield size={26} />,
       },
     ],

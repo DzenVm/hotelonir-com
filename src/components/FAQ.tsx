@@ -8,37 +8,44 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="py-24 bg-white border-t border-gray-200">
-      <div className="mx-auto max-w-4xl px-6">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900">
-          Pytania, które często słyszymy
+    <section id="faq" className="uniq-py-24 uniq-bg-white uniq-border-t uniq-border-gray-200">
+      <div className="uniq-mx-auto uniq-max-w-4xl uniq-px-6">
+        <h2 className="uniq-text-3xl sm:uniq-text-4xl uniq-font-bold uniq-text-center uniq-text-gray-900">
+          Frequently Asked Questions
         </h2>
-        <p className="mt-2 text-center text-gray-600">
-          Jeśli coś Cię nurtuje przed rezerwacją — sprawdź poniżej. Zebraliśmy najczęstsze odpowiedzi w jednym miejscu.
+        <p className="uniq-mt-2 uniq-text-center uniq-text-gray-600">
+          Got questions before booking? Find concise answers to our most common inquiries below.
         </p>
 
-        <div className="mt-10 space-y-4">
+        <div className="uniq-mt-10 uniq-space-y-4">
           {faqs.map(({ question, answer }, idx) => {
             const isOpen = openIndex === idx;
             return (
               <div
                 key={question}
-                className="rounded-lg border border-gray-300 bg-gray-50 overflow-hidden"
+                className="uniq-rounded-lg uniq-border uniq-border-gray-300 uniq-bg-gray-50 uniq-overflow-hidden"
               >
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : idx)}
-                  className="flex w-full items-center justify-between px-5 py-4 text-left text-gray-900 hover:bg-gray-100 transition"
+                  className="
+                    uniq-flex uniq-w-full uniq-items-center uniq-justify-between
+                    uniq-px-5 uniq-py-4 uniq-text-left uniq-text-gray-900
+                    uniq-hover:uniq-bg-gray-100 uniq-transition
+                  "
                 >
-                  <span className="font-medium">{question}</span>
+                  <span className="uniq-font-medium">{question}</span>
                   <ChevronDown
                     size={20}
-                    className={`transition-transform text-gray-500 ${isOpen ? 'rotate-180' : ''}`}
+                    className={`
+                      uniq-transition-transform uniq-text-gray-500
+                      ${isOpen ? 'uniq-rotate-180' : ''}
+                    `}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 text-gray-700 text-sm leading-relaxed">
+                  <div className="uniq-px-5 uniq-pb-5 uniq-text-gray-700 uniq-text-sm uniq-leading-relaxed">
                     {answer}
                   </div>
                 )}

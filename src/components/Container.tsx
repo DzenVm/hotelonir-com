@@ -4,9 +4,16 @@ interface Props {
     className?: string;
 }
 
-const Container: React.FC<React.PropsWithChildren<Props>> =({ children, className }: React.PropsWithChildren<Props>) => {
+const Container: React.FC<React.PropsWithChildren<Props>> = ({ children, className }) => {
     return (
-        <div className={`px-5 w-full max-w-7xl mx-auto ${className ? className : ""}`}>{children}</div>
+        <div
+            className={`
+                uniq-px-5 uniq-w-full uniq-max-w-7xl uniq-mx-auto
+                ${className ?? ""}
+            `}
+        >
+            {children}
+        </div>
     )
 }
 

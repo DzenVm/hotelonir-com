@@ -1,7 +1,8 @@
+// src/data/ctaDetails.ts
 export const ctaDetails = {
-  heading: 'Zarezerwuj hotel z kasynem w kilka kliknięć',
+  heading: 'Reserve Your Gaming-Enabled Hotel in Just a Few Clicks',
   subheading:
-    'Najlepsze oferty, zweryfikowane obiekty i zero prowizji. Rozpocznij rezerwację i poczuj klimat luksusu – od razu po wejściu.',
-  appStoreUrl: '#', // jeśli w przyszłości dodasz aplikację
+    'Discover premier venues, verified properties, and zero booking fees. Kick off your stay and experience luxury from the moment you arrive.',
+  appStoreUrl: '#',
   googlePlayUrl: '#',
 };
