@@ -1,70 +1,34 @@
-// src/data/benefits.ts
-import { IBenefit } from "@/types";
-import { 
-  FaBed, 
-  FaDice, 
-  FaConciergeBell 
-} from "react-icons/fa";
+// src/components/Benefits/BenefitBullet.tsx
+"use client";
 
-export const benefits: IBenefit[] = [
-  {
-    title: "Seamless Booking Experience",
-    description: 
-      "Enjoy a hassle-free reservation process with instant confirmation and 24/7 support—no hidden fees, ever.",
-    imageSrc: "/images/benefit-booking.jpg",
-    bullets: [
-      {
-        icon: <FaBed size={24} />,
-        title: "Real-Time Availability",
-        description: 
-          "Get up-to-the-second room status across all our partnered venues.",
-      },
-      {
-        icon: <FaConciergeBell size={24} />,
-        title: "Dedicated Concierge",
-        description: 
-          "Our team assists with every detail—from check-in to special requests.",
-      },
-    ],
-  },
-  {
-    title: "Vibrant Entertainment Lounges",
-    description:
-      "Discover uniquely themed lounges in-house—perfect for unwinding after a day of exploring.",
-    imageSrc: "/images/benefit-lounge.jpg",
-    bullets: [
-      {
-        icon: <FaDice size={24} />,
-        title: "Game Venue Access",
-        description:
-          "Play your favorite table games in a safe, licensed environment.",
-      },
-      {
-        icon: <FaConciergeBell size={24} />,
-        title: "Live Music & Events",
-        description:
-          "Enjoy curated live performances and special events nightly.",
-      },
-    ],
-  },
-  {
-    title: "Tailored Wellness Retreats",
-    description:
-      "Revitalize with our spa and wellness packages—customized to your preferences.",
-    imageSrc: "/images/benefit-spa.jpg",
-    bullets: [
-      {
-        icon: <FaConciergeBell size={24} />,
-        title: "Personalized Spa Services",
-        description:
-          "Choose from massages, facials, and holistic therapies designed for you.",
-      },
-      {
-        icon: <FaBed size={24} />,
-        title: "Comfort-First Suites",
-        description:
-          "Relax in suites equipped with ergonomic bedding and calming interiors.",
-      },
-    ],
-  },
-];
+import { motion } from "framer-motion";
+import { IBenefitBullet } from "@/types";
+import { childVariants } from "./BenefitSection";
+
+const BenefitBullet: React.FC<IBenefitBullet> = ({
+  title,
+  description,
+  icon,
+}) => {
+  return (
+    <motion.div
+      className="
+        uniq-flex uniq-flex-col uniq-items-center uniq-mt-8 uniq-gap-3 
+        lg:uniq-gap-5 lg:uniq-flex-row lg:uniq-items-start
+      "
+      variants={childVariants}
+    >
+      <div className="uniq-flex uniq-justify-center uniq-mx-auto lg:uniq-mx-0 uniq-flex-shrink-0 uniq-mt-3 uniq-w-fit">
+        {icon}
+      </div>
+      <div>
+        <h4 className="uniq-text-lg uniq-font-semibold">{title}</h4>
+        <p className="uniq-text-base uniq-text-foreground-accent">
+          {description}
+        </p>
+      </div>
+    </motion.div>
+  );
+};
+
+export default BenefitBullet;
