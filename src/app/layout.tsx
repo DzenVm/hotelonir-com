@@ -15,6 +15,8 @@ const sourceSans = Source_Sans_3({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: siteDetails.metadata.title,
   description: siteDetails.metadata.description,
+   icon: '/favicon.ico',           // або '/favicon.svg'
+    apple: '/apple-touch-icon.png', // якщо є окремий Apple-ікон
   openGraph: {
     title: siteDetails.metadata.title,
     description: siteDetails.metadata.description,
