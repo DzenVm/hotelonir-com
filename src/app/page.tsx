@@ -3,7 +3,6 @@ import Hero from '@/components/Hero';
 import SearchForm from '@/components/SearchForm';
 import Benefits from '@/components/Benefits/Benefits';
 import FAQ  from '@/components/FAQ'; 
-import CTA from '@/components/CTA';
 import Stats from '@/components/Stats';
 
 
